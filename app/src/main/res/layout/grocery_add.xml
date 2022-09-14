@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Items to Cart"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:background="@color/textview_color"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:id="@+id/add_to_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name : "
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/name"
+                android:textColor="@color/black"
+                android:layout_below="@+id/add_to_cart"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_margin="10dp"
+            android:id="@+id/name_input"
+            android:background="@drawable/text_edit_border"
+            android:textColor="#7A7A7A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Quantity : "
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/qty"
+            android:textColor="@color/black"
+            android:layout_below="@+id/name_input"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qty"
+            android:layout_margin="10dp"
+            android:id="@+id/qty_input"
+            android:background="@drawable/text_edit_border"
+            android:textColor="#7A7A7A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Price : "
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/price"
+            android:textColor="@color/black"
+            android:layout_below="@+id/qty_input"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price"
+            android:layout_margin="10dp"
+            android:id="@+id/price_input"
+            android:background="@drawable/text_edit_border"
+            android:textColor="#7A7A7A"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        <Button
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:layout_weight="1"
+            android:layout_below="@+id/price_input"
+            android:layout_margin="10dp"
+            android:text="SAVE"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/price_input"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/save"
+            android:text="CANCEL"
+            android:textColor="@color/textview_color"
+            app:backgroundTint="#27FFFEFE" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
