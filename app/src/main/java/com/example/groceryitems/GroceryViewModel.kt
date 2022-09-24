@@ -6,6 +6,10 @@ import com.example.groceryitems.data.GroceryItem
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
+/*
+* Fetches the data from the UI interface and provides to the repository
+* */
+
 class GroceryViewModel(private val repository: GroceryRepository) : ViewModel() {
 
     fun insert(items : GroceryItem) = GlobalScope.launch {

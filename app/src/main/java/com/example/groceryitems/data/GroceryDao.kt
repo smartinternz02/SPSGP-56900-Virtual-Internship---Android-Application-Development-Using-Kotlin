@@ -4,6 +4,10 @@ package com.example.groceryitems.data
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
+/*
+* Dao class defines the queries and correspond them with method calls
+* */
+
 @Dao
 interface GroceryDao {
 

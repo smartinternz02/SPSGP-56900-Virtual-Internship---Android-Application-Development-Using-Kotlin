@@ -6,6 +6,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
+/*
+* Create an instance of database and perform operations using dao
+* */
+
 @Database(entities = [GroceryItem::class], version = 1, exportSchema = false)
 abstract class GroceryDatabase : RoomDatabase(){
 

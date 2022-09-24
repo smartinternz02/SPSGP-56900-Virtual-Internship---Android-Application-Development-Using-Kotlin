@@ -8,6 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.groceryitems.data.GroceryItem
 
+/*
+* This class is used to display the data fetched from the database into the UI interface
+* */
+
 class GroceryAdapter(var list: List<GroceryItem>, val groceryClicked : GroceryOnClick)
     : RecyclerView.Adapter<GroceryAdapter.GroceryViewHolder>(){
 

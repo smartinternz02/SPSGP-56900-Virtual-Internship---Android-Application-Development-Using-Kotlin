@@ -17,6 +17,11 @@ import com.example.groceryitems.databinding.GroceryItemBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.flow.observeOn
 
+/*
+* MainActivity contains all the initialization of classes and creates the behaviour of the
+* application
+* */
+
 class MainActivity : AppCompatActivity(), GroceryAdapter.GroceryOnClick {
 
     lateinit var groceryItemsRv : RecyclerView
